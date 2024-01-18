@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import express, { NextFunction, Request, Response } from 'express';
+import 'express-async-errors';
 import cors from 'cors';
 import routes from './routes';
 import AppError from '@shared/errors/AppError';
@@ -33,6 +34,6 @@ app.use(
     },
 );
 
-app.listen(3000, () => {
-    console.log('Server is running on port 3000 🐱‍👤');
+app.listen(3333, () => {
+    console.log('Server is running on port 3333 🐱‍👤');
 });
